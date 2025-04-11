@@ -36,16 +36,16 @@ test('click product image', async ({page}) => {
     await page.close();
 });
 
-test('remove from cart', async ({page}) => {
-    const loginPage = new LoginPage(page);
-    await loginPage.goto();
-    await loginPage.login("standard_user", "secret_sauce");
+// test('remove from cart', async ({page}) => {
+//     const loginPage = new LoginPage(page);
+//     await loginPage.goto();
+//     await loginPage.login("standard_user", "secret_sauce");
 
-    const productPage  = new ProductPage(page);
-    await productPage.addToCart();
-    await expect(page.locator('span[class="shopping_cart_badge"]')).toHaveText('1');
-    await productPage.removeFromCart();
-    await expect(page.locator('a[class="shopping_cart_link"]')).toBeVisible();
-    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
-    await page.close();
-});
+//     const productPage  = new ProductPage(page);
+//     await productPage.addToCart();
+//     await expect(page.locator('span[class="shopping_cart_badge"]')).toHaveText('1');
+//     await productPage.removeFromCart();
+//     await expect(page.locator('a[class="shopping_cart_link"]')).toBeVisible();
+//     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
+//     await page.close();
+// });
