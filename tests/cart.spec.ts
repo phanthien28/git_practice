@@ -16,3 +16,7 @@ test('check cart', async ({page}) => {
     await expect(page.getByText('Your Cart')).toBeVisible();
     await page.close();
 });
+
+test('check cart 1', async ({page}) => {
+    
+});
