@@ -54,4 +54,4 @@ test('click product image', async ({page}) => {
 
 //test1
 
-//test2
+//test3
