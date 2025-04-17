@@ -49,3 +49,5 @@ test('click product image', async ({page}) => {
 //     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 //     await page.close();
 // });
+
+//test
